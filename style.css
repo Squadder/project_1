@@ -1,0 +1,526 @@
+
+/* Body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fc;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.371), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+/*  margin-right: -60px;*/
+position: absolute;
+left: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333333;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+/* searchbar styles */
+/* Style for the search bar container */
+li.search {
+  list-style-type: none;
+  position: relative;
+  left: -600px;
+}
+
+/* Style for the search input */
+li.search input[type="search"] {
+  padding: 8px 30px 8px 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 9px; 
+  font-size: 16px; 
+  width: 230px; 
+  background-color: #f2f2f2;
+}
+
+/* Style for the search icon */
+li.search .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666; /* Icon color */
+}
+
+
+
+
+/*main body css*/
+
+ #header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    background: rgb(38, 38, 237);
+    background: linear-gradient(
+      175deg,
+      rgba(38, 38, 237, 1) 60%,
+      rgba(77, 39, 232, 1) 70%
+    );
+    height: 260px;
+    margin-top: -10px;
+  }
+
+  progress {
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  progress::-webkit-progress-bar {
+    background-color: #eee;
+  }
+
+  progress::-webkit-progress-value {
+    border-radius: 10px;
+  }
+
+  progress[value="20"]::-webkit-progress-value {
+    background-color: #f44336;
+  }
+
+  progress[value="40"]::-webkit-progress-value {
+    background-color: #ff9800;
+  }
+
+  progress[value="60"]::-webkit-progress-value {
+    background-color: #2196f3;
+  }
+
+  progress[value="80"]::-webkit-progress-value {
+    background-color: #4caf50;
+  }
+
+  .task span {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+
+  .task-center {
+    display: block;
+    text-align: center;
+    color: #2196f3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .task-center:hover {
+    text-decoration: underline;
+  }
+  .row {
+    justify-content: space-evenly;
+  }
+  /* img {
+    width: 400px;
+    height: 500px;
+  } */
+
+  .col-md-4 {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .col-md-4 > * {
+    flex-grow: 1;
+    margin-bottom: 20px;
+  }
+
+  .progress-tracker {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 500px; /* Adjust as needed */
+  }
+
+  .images{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .task {
+    flex-grow: 1;
+  }
+  .img-container {
+    margin-top: -101px;
+  }
+  .ri-pulse-line {
+    margin-right: 10px;
+  }
+  #calender {
+    position: absolute;
+    top: 110px;
+    right: 30px;
+    background-color: #fff;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 9px;
+  }
+  .card {
+    width: 250px;
+    height: 150px;
+    margin: 30px 10px;
+    padding: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .main-card {
+    margin-left: 100px;
+  }
+  .blue {
+    background-color: blue;
+    color: white;
+  }
+  .yellow {
+    background-color: rgb(255, 187, 0);
+    color: white;
+  }
+  .green {
+    background-color: green;
+    color: white;
+  }
+  .red {
+    background-color: red;
+    color: white;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin: 0;
+    text-align: left;
+    color: #fff;
+  }
+  button {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .blue-button {
+    background-color: blue;
+    color: white;
+    border-color: rgba(1, 1, 11, 0.316);
+  }
+  .yellow-button {
+    background-color: rgb(255, 187, 0);
+    color: white;
+    border-color: rgba(182, 138, 7, 0.611);
+  }
+  .green-button {
+    background-color: green;
+    color: white;
+    border-color: rgba(1, 80, 1, 0.511);
+  }
+  .red-button {
+    background-color: red;
+    color: white;
+    border-color: rgba(97, 0, 0, 0.58);
+  }
+  .icon {
+    float: right;
+    font-size: 40px;
+    margin-top: -50px;
+    margin-right: 10px;
+  }
+
+  /* animation  */
+
+  /* Add this CSS at the end of your existing CSS */
+@keyframes fade-in {
+0% {
+opacity: 0;
+transform: translateY(20px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.task,
+.card,
+img {
+animation: fade-in 0.5s ease-out forwards;
+opacity: 0;
+}
+
+.task:hover,
+.card:hover {
+transform: scale(1.05);
+}
+
+.blue-button,
+.yellow-button,
+.green-button,
+.red-button {
+transition: transform 0.3s ease-out;
+}
+
+.blue-button:hover,
+.yellow-button:hover,
+.green-button:hover,
+.red-button:hover {
+transform: translateY(-3px);
+}
+
+
+
+
+
+
+
+
+/*sidebar css*/
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  overflow-y: auto; /* Enable vertical scrollbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.sidenav a {
+  font-size: 25px;
+}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333333;
+  display: block;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-link .icon {
+  margin-right: 10px;
+}
+
+.text {
+  margin-left: 10px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #e0e0e0;
+}
+
+.icon-dashboard {
+  /* Use any icon font or image for the icons */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f015";
+  margin-right: 10px;
+}
+
+.icon-pages {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f15c";
+  margin-right: 10px;
+}
+
+.icon-layout {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0f7";
+  margin-right: 10px;
+}
+
+.icon-charts {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f080";
+  margin-right: 10px;
+}
+
+.icon-arrow-down {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  margin-left: auto;
+}
+
+.text {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.sub-nav {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-nav-item {
+  position: relative;
+}
+
+.sub-nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  padding-left: 40px;
+  color: #333;
+  text-decoration: none;
+}
+
+.sub-nav-link:hover {
+  background-color: #e0e0e0;
+}
+
+.sub-sub-nav {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-sub-nav-item {
+  position: relative;
+}
+
+.sub-sub-nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  padding-left: 65px;
+  color: #333;
+  text-decoration: none;
+}
+
+.sub-sub-nav-link:hover {
+  background-color: #e0e0e0;
+}
+
+/* Show the sub-menus when the parent link is clicked */
+.nav-link.active + .sub-nav {
+  display: block;
+}
+
+.sub-nav-link.active + .sub-sub-nav {
+  display: block;
+}
+
+/* Highlight the selected item */
+.nav-link.selected,
+.sub-nav-link.selected,
+.sub-sub-nav-link.selected {
+  color: #007bff;
+}
+
+.left_border{
+  border-left: 2px solid rgba(102, 94, 94, 0.377);
+  margin-left: 50px;
+  margin-top: -5px;
+}
+.border_left{
+  margin-left: -30px;
+}

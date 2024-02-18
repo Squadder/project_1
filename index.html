@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <!-- bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    
+    <!-- remix icon  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- google icons  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+     <!-- fomt awesome link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jquery -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css file  -->
+    <link rel="stylesheet" href="style.css" />
+    <title>index file</title>
+  </head>
+  <body>
+    <nav class="navbar">
+
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <!-- LOGO -->
+      <div class="logo" style="margin-left: 40px">SB Admin Pro</div>
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links menu">
+        <!-- Added 'menu' class here -->
+        <!-- SEARCH BAR -->
+        <li class="search">
+          <input type="search" placeholder="Search" />
+          <i style="font-size:24px" class="fa search-icon">&#xf002;</i>
+        </li>
+        <!-- NAVIGATION MENUS -->
+        <li>
+          <a href="/">Documentation</a><i class="ri-arrow-right-s-line"></i>
+        </li>
+        <span id="nav-icons">
+          <i class="material-icons bell">&#xe7f4;</i>
+          <i class="ri-mail-line mail"></i>
+        </span>
+        <span>
+          <img src="logo.png" alt="" width="30px" />
+        </span>
+      </ul>
+    </nav>
+
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="icon-dashboard"></i>
+            <span class="text">CORE</span>
+          </a>
+          <ul class="sub-nav">
+            <li class="sub-nav-item">
+              <a href="#" class="sub-nav-link active">
+                <span class="text"><i class="ri-pulse-line"></i>Dashboard</span>
+                <i class="icon-arrow-down"
+                  ><i class="ri-arrow-down-s-line"></i
+                ></i>
+              </a>
+              <ul class="sub-sub-nav left_border">
+                <li class="sub-sub-nav-item">
+                  <a href="#" class="sub-sub-nav-link selected">
+                    <span class="text border_left">Default (Updated)</span>
+                  </a>
+                </li>
+                <li class="sub-sub-nav-item">
+                  <a href="#" class="sub-sub-nav-link">
+                    <span class="text border_left">Multipurpose</span>
+                  </a>
+                </li>
+                <li class="sub-sub-nav-item">
+                  <a href="#" class="sub-sub-nav-link">
+                    <span class="text border_left">Affiliate</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="icon-pages"></i>
+            <span class="text">APP VIEWS</span>
+          </a>
+          <ul class="sub-nav">
+            <li class="sub-nav-item">
+              <a href="#" class="sub-nav-link">
+                <span class="text"><i class="ri-microsoft-fill"></i>Pages</span>
+              </a>
+            </li>
+            <li class="sub-nav-item">
+              <a href="#" class="sub-nav-link">
+                <span class="text"
+                  ><i class="ri-loop-right-line"></i>Flows</span
+                >
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="icon-layout"></i>
+            <span class="text">UI TOOLKIT</span>
+          </a>
+          <ul class="sub-nav">
+            <li class="sub-nav-item">
+              <a href="#" class="sub-nav-link">
+                <span class="text"><i class="ri-layout-3-line"></i>Layout</span>
+              </a>
+            </li>
+            <li class="sub-nav-item">
+              <a href="#" class="sub-nav-link">
+                <span class="text"
+                  ><i class="ri-dashboard-line"></i>Components</span
+                >
+              </a>
+            </li>
+            <li class="sub-nav-item">
+              <a href="#" class="sub-nav-link">
+                <span class="text"><i class="ri-tools-line"></i>Utilities</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="icon-charts"></i>
+            <span class="text">PLUGINS</span>
+          </a>
+          <ul class="sub-nav">
+            <li class="sub-nav-item">
+              <a href="#" class="sub-nav-link">
+                <span class="text"
+                  ><i class="ri-line-chart-fill"></i>Charts</span
+                >
+              </a>
+            </li>
+            <li class="sub-nav-item">
+              <a href="#" class="sub-nav-link">
+                <span class="text"><i class="ri-filter-line"></i>Tables</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+  </div>
+
+ 
+
+
+  <div id="main">
+      <div id="header">
+        <h1><i class="ri-pulse-line"></i>Dashboard</h1>
+        <p>
+          Example dashboard overview and content summary
+        </p>
+      </div>
+      <div class="container img-container">
+        <div id="calender">
+          <i class="ri-calendar-check-line"></i>
+          October 13, 2020-November 11, 2020
+          <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="working-girl.png" alt="" class="images" />
+          </div>
+          <div class="col-md-4">
+            <img src="list.png" alt="" class="images" />
+          </div>
+          <div class="col-md-4">
+            <div class="progress-tracker">
+              <h2>Progress Tracker</h2>
+              <div class="task">
+                <label>Server Migration</label>
+                <progress value="20" max="100"></progress>
+                <span>20%</span>
+              </div>
+              <!-- Repeat for other tasks -->
+
+              <div class="task">
+                <label>Sales Tracking</label>
+                <progress value="40" max="100"></progress>
+                <span>40%</span>
+              </div>
+              <!-- Repeat for other tasks -->
+
+              <div class="task">
+                <label>Customer Database</label>
+                <progress value="60" max="100"></progress>
+                <span>60%</span>
+              </div>
+              <!-- Repeat for other tasks -->
+
+              <div class="task">
+                <label>Server Migration</label>
+                <progress value="80" max="100"></progress>
+                <span>80%</span>
+              </div>
+              <!-- Repeat for other tasks -->
+
+              <div class="task">
+                <label>Server Migration</label>
+                <progress value="100" max="100"></progress>
+                <span>complete</span>
+              </div>
+              <!-- Repeat for other tasks -->
+              <a href="#" class="task-center">Visit Task Center</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- bottom cards  -->
+      <div class="main-card">
+        <div class="card blue">
+          <p>Earnings (Monthly)</p>
+          <h2>$40,000</h2>
+          <i class="ri-calendar-line icon"></i>
+          <button class="blue-button">
+            View Report<i class="ri-arrow-right-s-line"></i>
+          </button>
+        </div>
+
+        <div class="card yellow">
+          <p>Earnings (Annually)</p>
+          <h2>$215,000</h2>
+          <i class="ri-money-dollar-circle-line icon"></i>
+          <button class="yellow-button">
+            View Report<i class="ri-arrow-right-s-line"></i>
+          </button>
+        </div>
+
+        <div class="card green">
+          <p>Tasks Completed</p>
+          <h2>24</h2>
+          <i class="ri-checkbox-multiple-line icon"></i>
+          <button class="green-button">
+            View Task<i class="ri-arrow-right-s-line"></i>
+          </button>
+        </div>
+
+        <div class="card red">
+          <p>Pending Requests</p>
+          <h2>17</h2>
+          <i class="ri-chat-3-line icon"></i>
+          <button class="red-button">
+            View Requests<i class="ri-arrow-right-s-line"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+     
+   
+    <script src="script.js"></script>
+  </body>
+</html>
